@@ -16,18 +16,6 @@
         
         <button type="submit">Надіслати</button>
     </form>
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = htmlspecialchars($_POST["name"]);
-        $telegram = htmlspecialchars($_POST["telegram"]);
-        
-        $to = "Artemuy85@gmail.com";  // Ваша електронна пошта
-        $subject = "Нова заявка з сайту";
-        $message = "Ім'я: $name\nТелеграм-канал: $telegram";
-        $headers = "From: no-reply@yourwebsite.com";
-
-        if (mail($to, $subject, $message, $headers)) {
-            echo 
 </body>
 </html>
+
